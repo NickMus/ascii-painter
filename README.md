@@ -1,6 +1,6 @@
 ASCii-Painter
 
-This is an example of a simple web application that is capable of processing user files or video received from a web camera.
+This is an example of a simple web application that is capable of processing user files or video received from a web camera written in Java.
 
 By default applicition starts on port :8080.
 
