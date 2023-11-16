@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Result Page</title>
+    <style>
+        html, body {
+            height: 100vh;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<form method="post" th:action="@{/upload-image}" enctype="multipart/form-data">
+    <div class="form-group">
+        <input type="file" name="image" accept="image/*" class="form-control-file">
+    </div>
+    <button type="submit" class="btn btn-primary">Upload image</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Result Page</title>
+    <script th:inline="javascript">
+        setInterval(function () {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState === 4 && this.status === 200) {
+                    document.getElementById("video").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "/video", true);
+            xhttp.send();
+        }, 40);
+    </script>
+    <style>
+        html, body {
+            transform: scale(0.5);
+            height: 100vh;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<pre id="video" th:text="${video}"></pre>
+</body>
+</html>
