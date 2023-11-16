@@ -22,7 +22,7 @@ public class AsciiController {
     private final VideoConverterService videoConverter;
     private final ImageConverterService imageConverterService;
 
-    @GetMapping("/get-video")
+    @GetMapping("/webcam")
     public String asciiVideo(Model model) {
         model.addAttribute("video", videoConverter.convertVideo());
         return "video";
