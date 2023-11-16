@@ -1,4 +1,5 @@
 ASCii-Painter
+
 This is an example of a simple web application that is capable of processing user files or video received from a web camera.
 By default applicition starts on port :8080.
 The algorithm is pretty simple. 
